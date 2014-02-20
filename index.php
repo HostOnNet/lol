@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="js/lol.js"></script>
+
     </head>
 
 		<body>
@@ -126,34 +128,6 @@ function print_secure_content()
 </form><br />
 
 </div>
-
-<script>
-
- $(document).ready(function()
- {
-
-    showPrice();
-
-    $('#package_options').change(function()
-    {
-        showPrice();
-
-    });
-
-    function showPrice()
-    {
-        var league = $("#league").val();
-        var league2 = $("#league2").val();
-        var division = $("#division").val();
-        var division2 = $("#division2").val();
-        var lp_gain = $("#lp_gain").val();
-        var total_amount = 3000 + parseInt(lp_gain);
-        $('#total_cost').html('Price for ' + league + ' ' + division + ' ' + league2 + ' ' + division2 + '  ' + lp_gain + ' is $' + total_amount );
-    }
-
- });
-
-</script>
 
 </body>
 </html>
