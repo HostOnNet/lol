@@ -10,6 +10,7 @@
     <meta name="author" content="BurnToBeEviL, RealistCC" />
     <meta name="design" content="RealistCC" />
     <meta name="code" content="BurnToBeEviL" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="js/lol.js"></script>
