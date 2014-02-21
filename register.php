@@ -34,23 +34,23 @@
 Please, input the registration details to create an account here!<br>
 <table border="0" style="position:absolute">
 <tr>
-<td style="color: black;">Username :<span style="color: red;">*</span></td><td><input name="regname" style="color:black;"type="text" size="20"/></td>
+<td style="color: black;">Username :<span style="color: red;">*</span></td><td> <input name="regname" style="color:#000;"type="text" size="20"/></td>
 </tr>
 <tr>
-<td style="color: black;">PayPal E-mail :<span style="color: red;">*</span></td><td><input name="regemail" type="text" size="20"></input></td>
+<td style="color: black;">PayPal E-mail :<span style="color: red;">*</span> </td> <td><input name="regemail" style="color:#000;"type="text" size="20"></input></td>
 </tr>
 </table>
 <table border="0" style="margin-left: 320px; position: absolute">
 <tr>
-<td style="color: black;">Password :<span style="color: red;">*</span></td><td><input name="regpass1" type="password" size="20"></input></td>
+<td style="color: black;">Password :<span style="color: red;">*</span> </td><td> <input name="regpass1" style="color:#000;"type="password" size="20"></input></td>
 </tr>
 <tr>
-<td style="color: black;">Re-type password :<span style="color: red;">*</span></td><td><input name="regpass2" type="password" size="20"></input></td>
+<td style="color: black;">Re-type password :<span style="color: red;">*</span> </td><td> <input name="regpass2" style="color:#000;"type="password" size="20"></input></td>
 </tr>
 </table>
  <table border="0" style="margin-left: 660px;">
  <tr>
-<td style="color: black;">Skype:<span style="color: red;">*</span></td><td><input name="skype" type="text" size="20"></input></td>
+<td style="color: black;">Skype:<span style="color: red;">*</span></td><td> <input name="skype" type="text" style="color:#000;"size="20"></input></td>
 </tr>
 <tr><td></td></tr>
 </table>
