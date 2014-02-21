@@ -40,7 +40,7 @@ Please, input the registration details to create an account here!<br>
 <td style="color: black;">PayPal E-mail :<span style="color: red;">*</span></td><td><input name="regemail" type="text" size="20"></input></td>
 </tr>
 </table>
-<table border="0" style="margin-left: 290px; position: absolute">
+<table border="0" style="margin-left: 320px; position: absolute">
 <tr>
 <td style="color: black;">Password :<span style="color: red;">*</span></td><td><input name="regpass1" type="password" size="20"></input></td>
 </tr>
@@ -48,12 +48,13 @@ Please, input the registration details to create an account here!<br>
 <td style="color: black;">Re-type password :<span style="color: red;">*</span></td><td><input name="regpass2" type="password" size="20"></input></td>
 </tr>
 </table>
- <table border="0" style="margin-left: 620px;">
+ <table border="0" style="margin-left: 660px;">
  <tr>
 <td style="color: black;">Skype:<span style="color: red;">*</span></td><td><input name="skype" type="text" size="20"></input></td>
 </tr>
 <tr><td></td></tr>
 </table>
+<br />
 <br />
  <input type="submit" name="regsubmit" value="Register me!"></input>
 
