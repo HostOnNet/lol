@@ -1,5 +1,4 @@
- include 'make_payment.php';
- 
+
  $(document).ready(function()
  {
     showPrice();
@@ -16,8 +15,9 @@
         var division = $("#division").val();
         var division2 = $("#division2").val();
         var lp_gain = $("#lp_gain").val();
-        var total_amount = 3000 + parseInt(lp_gain);
-        $('#total_cost').html('It costs:' $price );
+		var price = $("#price").val();
+		var total_amount = 0 + parseint(price);
+        $('#total_cost').html('It costs: $' total_amount );
     }
 
  });
