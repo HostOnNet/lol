@@ -12,13 +12,14 @@
 			 <meta name="design" content="RealistCC" />
 			 <meta name="code" content="BurnToBeEviL" />
 			 <link type="text/css" rel="stylesheet" href="css/style.css" />
+             <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		 </head>
 <body  bgcolor="black"    style="color:white;">
 <div id="head">
 			     <a href="index.php"><div id="logo"></div></a>
 				 <div class="rightsidehead"><a href="register.php"><div class="createaccount"></div></a><div class="bordertop"></div><a href="login.php"><div class="logintop"></div></a></div>
 			 </div>
-			
+
 			     <div align="Center" class="introimage"> <div id="menu">
 			     <a href="index.php"><div class="menucont"> Home </div></a>
 			     <a href="index.php"><div class="menucont2"> Boosters </div></a>
@@ -26,7 +27,7 @@
 			     <a href="index.php"><div class="menucont4"> News </div></a>
 			     <a href="index.php"><div class="menucont5"> Contact us </div></a>
 				 <div class="logo2"></div>
-		 
+
 		     </div></div>
 		             <div class="content">
 <FORM ACTION="register.php" style="margin-left: 20px; color: black;" METHOD="POST"><br />
@@ -39,7 +40,7 @@ Please, input the registration details to create an account here!<br>
 <td style="color: black;">PayPal E-mail :<span style="color: red;">*</span></td><td><input name="regemail" type="text" size="20"></input></td>
 </tr>
 </table>
-<table border="0" style="margin-left: 270px; position: absolute">
+<table border="0" style="margin-left: 290px; position: absolute">
 <tr>
 <td style="color: black;">Password :<span style="color: red;">*</span></td><td><input name="regpass1" type="password" size="20"></input></td>
 </tr>
@@ -47,7 +48,7 @@ Please, input the registration details to create an account here!<br>
 <td style="color: black;">Re-type password :<span style="color: red;">*</span></td><td><input name="regpass2" type="password" size="20"></input></td>
 </tr>
 </table>
- <table border="0" style="margin-left: 600px;">
+ <table border="0" style="margin-left: 620px;">
  <tr>
 <td style="color: black;">Skype:<span style="color: red;">*</span></td><td><input name="skype" type="text" size="20"></input></td>
 </tr>
@@ -73,7 +74,7 @@ $con=mysqli_connect("localhost","root","","test");
 $check="SELECT * FROM users WHERE name = '$_POST[regname]'";
 $rs = mysqli_query($con,$check);
 $data = mysqli_fetch_array($rs, MYSQLI_NUM);
-if($data[0] > 1) 
+if($data[0] > 1)
 {
     echo "<p style='color: black;'>User Already in Exists<br/></p>";
 }
@@ -84,7 +85,7 @@ else{
 
      if($regname && $password && $skype && $password == $password_confirm )
 	 {
- 
+
 
 		$sql = "insert into users SET name='$regname', email='$regemail',password='$password', skype='$skype'";
 		$result = mysql_query($sql) or die(mysql_error());
@@ -109,8 +110,8 @@ else{
 	 echo "<p style='color: black;'>Error</p>";
 	 exit;
 	 }
-	
-	
+
+
 }
 }
 
