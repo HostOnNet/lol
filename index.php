@@ -125,11 +125,11 @@ function print_secure_content()
         <input type="submit" name="submit" value="I'm Ready!" class="btn btn-primary btn-lg"  style="margin-bottom:4em"/>
     </div>
 
- <p class="somethingretarded" style="color: red; font-size: 12pt;">If you are going to make an order, please, make sure you have an existing account and you are logged in order to get contacted by our staff, thanks!</p>
+ <p class="somethingretarded">If you are going to make an order, please, make sure you have an existing account and you are logged in order to get contacted by our staff, thanks!</p>
 </form><br />
 
 <span>Why us?</span>
-<p class="somethingretarded"style="font-weight: 400;">We provide boosting at great prices for a good quality. Everything is safety and anonymous! You can directly talk to your booster about the progress, how it goes and he will always asks you if he can do other activities on your account like buying champions or runes. Many of our past customers, come back again and again to use our services!</p>
+<p class="somethingretarded2">We provide boosting at great prices for a good quality. Everything is safety and anonymous! You can directly talk to your booster about the progress, how it goes and he will always asks you if he can do other activities on your account like buying champions or runes. Many of our past customers, come back again and again to use our services!</p>
 
 </div>
 
