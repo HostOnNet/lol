@@ -1,3 +1,5 @@
+ include 'make_payment.php';
+ 
  $(document).ready(function()
  {
     showPrice();
@@ -15,7 +17,7 @@
         var division2 = $("#division2").val();
         var lp_gain = $("#lp_gain").val();
         var total_amount = 3000 + parseInt(lp_gain);
-        $('#total_cost').html('Price for ' + league + ' ' + division + ' ' + league2 + ' ' + division2 + '  ' + lp_gain + ' is $' + total_amount );
+        $('#total_cost').html('It costs:' $price );
     }
 
  });
