@@ -20,7 +20,8 @@
 		<body>
             <div id="head">
                 <a href="index.php"><div id="logo"></div></a>
-                <div class="rightsidehead"><?php
+                <div class="rightsidehead">
+                    <?php
 
 
 if( isset($_SESSION["username"]))

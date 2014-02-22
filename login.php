@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -13,10 +14,10 @@ else
 function loginform()
 {
     print ("<form action=login.php method=post><div class='login'>Username: <input type='text' maxlength='19' class='inputlogin' name='username' /></div>
-		<div class='login2'>Password: <input type='password'  class='inputlogin' maxlength='17' name='password' /></div>");
+        <div class='login2'>Password: <input type='password'  class='inputlogin' maxlength='17' name='password' /></div>");
     print "<input type='submit' value='Login!' id='login' /></form>";
-	print "<a href='#'><div class='forgot'>Forgotten password?</div></a>";
-	print "<a href='register.php'><div class='registration'>Sign up!</div></a>";
+    print "<a href='forgotten.php'><div class='forgot'>Forgotten password?</div></a>";
+    print "<a href='register.php'><div class='registration'>Sign up!</div></a>";
 }
 
 
@@ -33,7 +34,7 @@ return  mysql_num_rows($result);
 
 function print_secure_content()
 {
-	print("<br><p style='margin-left:25px; color: #fff;'</p>Hello, " . $_SESSION['username']);
+    print("<br><p style='margin-left:25px; color: #fff;'</p>Hello, " . $_SESSION['username']);
     print "<br><a href='logout.php'><p style='text-decoration: underline; margin-left: 25px;'>Sign out</p></a><br>";
 
 }
