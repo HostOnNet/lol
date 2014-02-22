@@ -216,7 +216,7 @@ function get_price($league_1, $division_1, $league_2, $division_2)
         case 'bronze1-div1-gold2-div2two': // 1 -> 2gold
             $price = 226;
             break;
-        case 'bronze1-div1-gold2-div2two': // 1 -> 1gold
+        case 'bronze1-div1-gold2-div1two': // 1 -> 1gold
             $price = 259;
             break;
         case 'bronze1-div5-platinium2-div5two': // 5 -> 5platinium
@@ -234,6 +234,9 @@ function get_price($league_1, $division_1, $league_2, $division_2)
         case 'bronze1-div5-platinium2-div1two': // 5 -> 1platinium
             $price = 440;
             break;
+        case 'bronze1-div5-diamond2-div5two': // 5 -> 5diamond
+            $price = 520;
+            break;
         case 'bronze1-div4-platinium2-div5two': // 4 -> 5platinium
             $price = 246;
             break;
@@ -248,6 +251,9 @@ function get_price($league_1, $division_1, $league_2, $division_2)
             break;
         case 'bronze1-div4-platinium2-div1two': // 4 -> 1platinium
             $price = 426;
+            break;
+        case 'bronze1-div4-diamond2-div5two': // 4 -> 5diamond
+            $price = 506;
             break;
         case 'bronze1-div3-platinium2-div5two': // 3 -> 5platinium
             $price = 233;
@@ -264,11 +270,44 @@ function get_price($league_1, $division_1, $league_2, $division_2)
         case 'bronze1-div3-platinium2-div1two': // 3 -> 1platinium
             $price = 403;
             break;
+        case 'bronze1-div3-diamond2-div5two': // 3 -> 5diamond
+            $price = 483;
+            break;
         case 'bronze1-div2-platinium2-div5two': // 2 -> 5platinium
             $price = 220;
             break;
+        case 'bronze1-div2-platinium2-div4two': // 2 -> 4platinium
+            $price = 265;
+            break;
+        case 'bronze1-div2-platinium2-div3two': // 2 -> 3platinium
+            $price = 310;
+            break;
+        case 'bronze1-div2-platinium2-div2two': // 2 -> 2platinium
+            $price = 355;
+            break;
+        case 'bronze1-div2-platinium2-div1two': // 2 -> 1platinium
+            $price = 400;
+            break;
+        case 'bronze1-div2-diamond2-div5two': // 2 -> 5diamond
+            $price = 480;
+            break;
         case 'bronze1-div1-platinium2-div5two': // 1 -> 5platinium -- Everything done From Bronze To Platinium --
             $price = 207;
+            break;
+        case 'bronze1-div1-platinium2-div4two': // 1 -> 4platinium
+            $price = 252;
+            break;
+        case 'bronze1-div1-platinium2-div3two': // 1 -> 3platinium
+            $price = 297;
+            break;
+        case 'bronze1-div1-platinium2-div2two': // 1 -> 2platinium
+            $price = 342;
+            break;
+        case 'bronze1-div1-platinium2-div5two': // 1 -> 1platinium
+            $price = 387;
+            break;
+        case 'bronze1-div1-diamond2-div5two': // 1 -> 5diamond
+            $price = 467;
             break;
 		 //silver
 			case 'silver1-div5-silver2-div4two': // 5 -> 4
