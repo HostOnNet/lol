@@ -84,7 +84,7 @@ function print_secure_content()
             <option value="bronze1" name="bronze1">Bronze</option>
             <option value="silver1">Silver</option>
             <option value="gold1">Gold</option>
-            <option value="platinim1">Platinium</option>
+            <option value="platinium1">Platinium</option>
         </select><br />
         Division:
         <select name="division" id="division">
@@ -106,7 +106,7 @@ function print_secure_content()
             <option value="bronze2"name="bronze2">Bronze</option>
             <option value="silver2">Silver</option>
             <option value="gold2">Gold</option>
-            <option value="platinim2">Platinium</option>
+            <option value="platinium2">Platinium</option>
             <option value="diamond2">Diamond</option>
         </select><br />
         Division:
