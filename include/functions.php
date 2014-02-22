@@ -238,6 +238,9 @@ function get_price($league_1, $division_1, $league_2, $division_2)
         case 'bronze1-div5-platinium2-div1two': // 5 -> 1platinium
             $price = 541;
             break;
+        case 'bronze1-div5-diamond2-div5two': // 5 -> 5diamond
+            $price = 621;
+            break;
         case 'bronze1-div4-platinium2-div5two': // 4 -> 5platinium
             $price = 348;
             break;
@@ -252,6 +255,9 @@ function get_price($league_1, $division_1, $league_2, $division_2)
             break;
         case 'bronze1-div4-platinium2-div1two': // 4 -> 1platinium
             $price = 528;
+            break;
+        case 'bronze1-div4-diamond2-div5two': // 4 -> 5diamond
+            $price = 608;
             break;
         case 'bronze1-div3-platinium2-div5two': // 3 -> 5platinium
             $price = 335;
