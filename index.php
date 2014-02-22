@@ -33,16 +33,6 @@ else
     print "<a href='register.php'><div class='createaccount'></div></a><div class='bordertop'></div><a href='login.php'><div class='logintop'></div></a>";
 }
 
-function loginform()
-{
-    print ("<form action=login.php method=post><div class='login'>Вашето име: <input type='text' maxlength='19' class='inputlogin' name='username' /></div>
-		<div class='login2'>Вашата парола: <input type='password'  class='inputlogin' maxlength='17' name='password' /></div>");
-    print "<input type='submit' value='Влез!' id='login' /></form>";
-	print "<a href='#'><div class='forgot'>Забравена парола?</div></a>";
-	print "<a href='register.php'><div class='registration'>Регистрация!</div></a>";
-}
-
-
 function checkpass()
 {
 include './include/config.php';
