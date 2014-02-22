@@ -722,7 +722,7 @@ function get_price($league_1, $division_1, $league_2, $division_2)
             $price = 80;
             break;
         default:
-            die('We currently don\'t offer it');
+            die('unknown product - ' . $product);
     }
 
     return $price;
