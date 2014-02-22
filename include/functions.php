@@ -709,7 +709,7 @@ function get_price($league_1, $division_1, $league_2, $division_2)
             $price = 310;
             break;
             //platinium
-             case 'platinium1-div4-platinium2-div4two': // 5platinium -> 4
+             case 'platinium1-div5-platinium2-div4two': // 5platinium -> 4
             $price = 45;
             break;
              case 'platinium1-div5-platinium2-div3two': // 5platinium -> 3
