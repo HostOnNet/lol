@@ -1,4 +1,3 @@
-
  $(document).ready(function()
  {
     showPrice();
@@ -16,9 +15,20 @@
         var division2 = $("#division2").val();
         var lp_gain = $("#lp_gain").val();
 		var price = $("#price").val();
-		var total_amount = 0 + parseint(price);
-        $('#total_cost').html('It costs: $' total_amount );
+        var sUrl = "get_price.php";
+        var postData = "league=" + league + "&league2=" + league2 + "&division=" + division + "&division2=" + division2;
+
+        $.ajax({
+            type: "POST",
+            url: sUrl,
+            data: postData,
+            dataType: 'html',
+            success: function(msg) {  $('#total_cost').html("Total price = $" + msg); },
+            error: function() { alert('fail'); }
+        });
     }
+
+
 
  });
 
