@@ -21,7 +21,7 @@
             <div id="head">
                 <a href="index.php"><div id="logo"></div></a>
                 <div class="rightsidehead">
-                    <?php
+                   <?php
 
 
 if( isset($_SESSION["username"]))
@@ -46,7 +46,7 @@ return  mysql_num_rows($result);
 
 function print_secure_content()
 {
-	print("<br><p style='color: #fff; margin-top: -10px'</p>Hello, " . $_SESSION['username']);
+    print("<br><p style='color: #fff; margin-top: -10px'</p>Hello, " . $_SESSION['username']);
     print "<br><a style='color: #ccc;' href='logout.php'><p style='text-decoration: underline; margin-top:-20px; '>Sign out</p></a><br>";
 
 }
