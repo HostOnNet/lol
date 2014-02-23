@@ -33,17 +33,6 @@ else
     print "<a href='register.php'><div class='createaccount'></div></a><div class='bordertop'></div><a href='login.php'><div class='logintop'></div></a>";
 }
 
-function checkpass()
-{
-include './include/config.php';
-mysql_select_db($conn);
-$sql_username = isset($_GET['username']) ? $_GET['username'] : '';
-$sql_password = isset($_GET['password']) ? $_GET['password'] : '';
-$sql="select * from users where name='$sql_username' and password='$sql_password'";
-$result=mysql_query($sql,$conn) or die(mysql_error());
-return  mysql_num_rows($result);
-}
-
 function print_secure_content()
 {
     print("<br><p style='color: #fff; margin-top: -10px'</p>Hello, " . $_SESSION['username']);
