@@ -36,7 +36,7 @@ return  mysql_num_rows($result);
 
 <?php
 
-include './include/config.php.sample';
+include './include/config.php';
 
 if (isset($_POST['username']))
 {
