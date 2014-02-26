@@ -4,6 +4,7 @@
     <input type="hidden" name="form_id" value="2">
     Nickname <br><input type="text" name="name" style="width:100%;margin:0 0 10px;">
     Email Address <br><input type="text" name="email" style="width:100%;margin:0 0 10px;">
+    Subject <br><input type="text" name="subject" style="width:100%;margin:0 0 10px;">
     Comments <br><textarea name="comments" style="width:100%;height:120px;margin:0 0 10px;"></textarea>
     <input type="submit" value="Send">
 </form>
