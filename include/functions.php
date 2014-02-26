@@ -761,7 +761,7 @@ function get_price($league_1, $division_1, $league_2, $division_2)
             $price = 80;
             break;
         default:
-            die('unknown product - ' . $product);
+            die('0(we don\'t offer this type of boosting)');
     }
 
     return $price;
