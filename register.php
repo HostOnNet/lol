@@ -25,7 +25,7 @@
 			     <a href="index.php"><div class="menucont2"> Boosters </div></a>
 			     <a href="index.php"><div class="menucont3"> Counters </div></a>
 			     <a href="index.php"><div class="menucont4"> News </div></a>
-			     <a href="index.php"><div class="menucont5"> Contact us </div></a>
+			     <a href="contact.php"><div class="menucont5"> Contact us </div></a>
 				 <div class="logo2"></div>
 
 		     </div></div>

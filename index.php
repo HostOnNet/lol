@@ -15,6 +15,7 @@
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="js/lol.js"></script>
 
+
     </head>
 
 		<body>
@@ -47,7 +48,7 @@ function print_secure_content()
 			     <a href="index.php"><div class="menucont2"> Boosters </div></a>
 			     <a href="index.php"><div class="menucont3"> Counters </div></a>
 			     <a href="index.php"><div class="menucont4"> News </div></a>
-			     <a href="index.php"><div class="menucont5"> Contact us </div></a>
+			     <a href="contact.php"><div class="menucont5"> Contact us </div></a>
 				 <div class="logo2"></div>
 
 		     </div></div>
