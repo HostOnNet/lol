@@ -3,7 +3,7 @@
 
 if( isset($_SESSION["username"]))
 {
-     print_secure_content();
+     Header('Location: ' . BASE_URL);
 }
 else
 {
@@ -31,17 +31,12 @@ $result=mysql_query($sql,$conn) or die(mysql_error());
 return  mysql_num_rows($result);
 }
 
-function print_secure_content()
-{
-    print("<br><p style='margin-left:25px; color: #fff;'</p>Hello, " . $_SESSION['username']);
-    print "<br><a href='logout.php'><p style='text-decoration: underline; margin-left: 25px;'>Sign out</p></a><br>";
 
-}
 ?>
 
 <?php
 
-include './include/config.php';
+include './include/config.php.sample';
 
 if (isset($_POST['username']))
 {
