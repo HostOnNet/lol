@@ -1,5 +1,5 @@
 <?php
-
+include './include/config.php';
 
 if( isset($_SESSION["username"]))
 {
@@ -22,7 +22,6 @@ function loginform()
 
 function checkpass()
 {
-include './include/config.php';
 mysql_select_db($conn);
 $sql_username = isset($_GET['username']) ? $_GET['username'] : '';
 $sql_password = isset($_GET['password']) ? $_GET['password'] : '';
@@ -36,7 +35,6 @@ return  mysql_num_rows($result);
 
 <?php
 
-include './include/config.php';
 
 if (isset($_POST['username']))
 {
