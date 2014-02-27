@@ -54,7 +54,7 @@ if (isset($_POST['username']))
     }
     else
     {
-        die('Invalid user name or password, go back and try again');
+        echo "Invalid user name or password, go back and try again";
     }
 }
 else
