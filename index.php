@@ -14,6 +14,25 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="js/lol.js"></script>
+    <script type='text/javascript' >
+function leagues()
+{
+var league=document.getElementById("league");
+document.getElementById("league2").value=league.options[league.selectedIndex].options;
+}
+</script>
+<script>
+    $(document).ready(function(){
+        $("#loginto").click(function(){
+            $("#log10").show('slow', function(){});
+        });
+         $(".content, .introimage").mouseover(function(){
+            $("#log10").hide('slow', function(){});
+        });
+    });
+</script>
+
+
 
 
     </head>
@@ -25,13 +44,17 @@
                    <?php
 
 
-if( isset($_SESSION["username"]))
+if(isset($_SESSION["username"]))
 {
      print_secure_content();
 }
 else
 {
-    print "<a href='register.php'><div class='createaccount'></div></a><div class='bordertop'></div><a href='login.php'><div class='logintop'></div></a>";
+    print "<a href='register.php'><div class='createaccount'></div></a><div class='bordertop'></div><div id='loginto' class='logintop'></div><div id='log10'><form action='login.php' method=post><div class='login'>Username: <input type='text' maxlength='19' class='inputlogin' name='username' /></div>
+        <div class='login2'>Password : <input type='password'  class='inputlogin' maxlength='17' name='password' /></div><br />
+    <input type='submit' value='' id='login' /></form><br />
+    <a href='forgotten.php'><div class='forgot'>Forgotten password?</div></a>
+    <a href='register.php'><div class='registration'>Sign up!</div></a></div>";
 }
 
 function print_secure_content()
@@ -40,7 +63,8 @@ function print_secure_content()
     print "<br><a style='color: #ccc;' href='logout.php'><p style='text-decoration: underline; margin-top:-20px; '>Sign out</p></a><br>";
 
 }
-?></div>
+?>
+</div>
 			 </div>
 
 			     <div align="Center" class="introimage"> <div id="menu">
@@ -61,7 +85,7 @@ function print_secure_content()
         <div class="bronzeico"></div><br />
 
         League:
-        <select name="league" id="league">
+        <select name="league" id="league" onChange="leagues()">
             <option value="bronze1" name="bronze1">Bronze</option>
             <option value="silver1">Silver</option>
             <option value="gold1">Gold</option>
@@ -83,7 +107,7 @@ function print_secure_content()
         SELECT DESIRED LEAGUE AND DIVISION<br />
         <div class="diamondico"></div><br />
         League:
-        <select name="league2" id="league2">
+        <select name="league2" id="league2" >
             <option value="bronze2"name="bronze2">Bronze</option>
             <option value="silver2">Silver</option>
             <option value="gold2">Gold</option>
@@ -103,7 +127,7 @@ function print_secure_content()
     <div id="total_cost" class="alert alert-block alert-success" style="margin-top:3em"></div>
 
     <div class="imready">
-        <input type="submit" name="submit" value="I'm Ready!" class="btn btn-primary btn-lg"  style="margin-bottom:4em"/>
+        <input type="submit" name="submit" value="I'm Ready!" id="loading-example-btn" class="btn btn-primary btn-lg" data-loading-text="Loading..." style="margin-bottom:4em"/>
     </div>
 
  <p class="somethingretarded">If you are going to make an order, please, make sure you have an existing account and you are logged in order to get contacted by our staff, thanks!</p>
