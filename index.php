@@ -42,7 +42,7 @@ else
 function print_secure_content()
 {
     print("<br><p style='color: #fff; margin-top: -10px'</p>Hello, " . $_SESSION['username']);
-    print "<br><a style='color: #ccc;' href='logout.php'><p style='text-decoration: underline; margin-top:-20px; '>Sign out</p></a><br>";
+    print "<br><a style='color: #ccc;' href='logout.php'><p style='text-decoration: underline; margin-top:-17px; '>Sign out</p></a><br>";
 
 }
 ?>
