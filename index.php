@@ -1,6 +1,6 @@
 <?php
 session_start();
-require './include/config.php';
+
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -55,18 +55,46 @@ if(isset($_SESSION["username"]))
 }
 else
 {
-    print "<a href='register.php'><div class='createaccount'></div></a><div class='bordertop'></div><div id='loginto' class='logintop'></div><div id='log10'><form action='login.php' method=post><div class='login'>Username: <input type='text' maxlength='19' class='inputlogin' name='username' /></div>
+    print "<a href='register.php'><div class='createaccount'></div></a><div class='bordertop'></div><div id='loginto' class='logintop'></div><div id='log10'><form method=post><div class='login'>Username: <input type='text' maxlength='19' class='inputlogin' name='username' /></div>
         <div class='login2'>Password : <input type='password'  class='inputlogin' maxlength='17' name='password' /></div><br />
     <input type='submit' value='' id='login' /></form><br />
     <a href='forgotten.php'><div class='forgot'>Forgotten password?</div></a>
     <a href='register.php'><div class='registration'>Sign up!</div></a></div>";
+    function checkpass()
+{
+mysql_select_db($conn);
+$sql_username = isset($_GET['username']) ? $_GET['username'] : '';
+$sql_password = isset($_GET['password']) ? $_GET['password'] : '';
+$sql="select * from users where name='$sql_username' and password='$sql_password'";
+$result=mysql_query($sql,$conn) or die(mysql_error());
+return  mysql_num_rows($result);
 }
 
-function print_secure_content()
-{
-    print("<br><p style='color: #fff; margin-top: -10px'</p>Hello, " . $_SESSION['username']);
-    print "<br><a style='color: #ccc;' href='logout.php'><p style='text-decoration: underline; margin-top:-20px; '>Sign out</p></a><br>";
 
+if (isset($_POST['username']))
+{
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM users WHERE name='" . $username . "' AND password='" . $password . "'";
+    $result = mysql_query($sql);
+
+    if (mysql_num_rows($result) > 0)
+    {
+       $user_info = mysql_fetch_assoc($result);
+       $_SESSION['username'] = $user_info['name'];
+       $_SESSION['email'] = $user_info['email'];
+       Header('Location: ' . BASE_URL);
+    }
+    else
+    {
+        echo "Invalid username or password, go back and try again";
+    }
+}
+else
+{
+
+}
 }
 ?>
 </div>
