@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require './include/config.php';
 
 ?>
@@ -30,7 +30,7 @@ require './include/config.php';
                    <?php
 
 
-if( isset($_SESSION["name"]))
+if( isset($_SESSION['username']))
 {
      print_secure_content();
 }
@@ -41,7 +41,7 @@ else
 
 function print_secure_content()
 {
-    print("<br><p style='color: #fff; margin-top: -10px'</p>Hello, " . $_SESSION['name']);
+    print("<br><p style='color: #fff; margin-top: -10px'</p>Hello, " . $_SESSION['username']);
     print "<br><a style='color: #ccc;' href='logout.php'><p style='text-decoration: underline; margin-top:-20px; '>Sign out</p></a><br>";
 
 }
