@@ -28,10 +28,11 @@ document.getElementById("league2").value=league.options[league.selectedIndex].op
 </script>
 <script>
     $(document).ready(function(){
+        $('#log10').hide();
         $("#loginto").click(function(){
             $("#log10").fadeIn('slow', function(){});
         });
-         $(".content, .introimage").mouseover(function(){
+         $(".content, .introimage, #loginto").mouseover(function(){
             $("#log10").fadeOut('slow', function(){});
         });
     });
