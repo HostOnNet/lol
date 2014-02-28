@@ -39,7 +39,7 @@ Please, input the registration details to create an account here!<br /><br />
 </tr>
 <tr><td></td></tr>
 </table><br />
-<input type='checkbox' name='agreeterms' /> <span style='color: #fff;'>I confirm that I've read <a href='terms.php' class='big-link' data-reveal-id='myModal' data-animation='fade'>the terms of use</a></span>
+<input type='checkbox' name='agreeterms' /> <span style='color: #fff;'>I confirm that I've read <a href='#' class='big-link' data-reveal-id='myModal' data-animation='fade'>the terms of use</a></span>
 <br />
 <br />
  <input type='submit' name='regsubmit' value='Register me!'></input>
