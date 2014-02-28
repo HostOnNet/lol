@@ -39,7 +39,7 @@ Please, input the registration details to create an account here!<br /><br />
 </tr>
 <tr><td></td></tr>
 </table><br />
-<input type='checkbox' name='agreeterms' /> <span style='color: #fff;'>I confirm that I've read <a href='terms.php'>the terms of use</a></span>
+<input type='checkbox' name='agreeterms' /> <span style='color: #fff;'>I confirm that I've read <a href='terms.php' class='big-link' data-reveal-id='myModal' data-animation='fade'>the terms of use</a></span>
 <br />
 <br />
  <input type='submit' name='regsubmit' value='Register me!'></input>
@@ -138,6 +138,11 @@ function print_secure_content()
 <p class="somethingretarded2">We provide boosting at great prices for a good quality. Everything is safety and anonymous! You can directly talk to your booster about the progress, how it goes and he will always asks you if he can do other activities on your account like buying champions or runes. Many of our past customers, come back again and again to use our services!</p>
 
 </div>
+<div id="myModal" class="reveal-modal">
+			<h1>Reveal Modal Goodness</h1>
+			<p>This is a default modal in all its glory, but any of the styles here can easily be changed in the CSS.</p>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
 
 </body>
 </html>
