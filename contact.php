@@ -46,8 +46,4 @@ function print_secure_content()
     <input type="submit" value="Send">
 </form>
 
-<?php
-    if(isset($_SESSION['username'])){
-        $_POST['user_id'] = $_SESSION['username'];
-    }
-?>
+
