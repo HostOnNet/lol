@@ -8,16 +8,8 @@ if( isset($_SESSION["username"]))
 }
 else
 {
-    loginform();
-}
-
-function loginform()
-{
-    print ("<form action=login.php method=post><div class='login'>Username: <input type='text' maxlength='19' class='inputlogin' name='username' /></div>
-        <div class='login2'>Password: <input type='password'  class='inputlogin' maxlength='17' name='password' /></div>");
-    print "<input type='submit' value='Login!' id='login' /></form>";
-    print "<a href='forgotten.php'><div class='forgot'>Forgotten password?</div></a>";
-    print "<a href='register.php'><div class='registration'>Sign up!</div></a>";
+    echo 'You have logged in successfully.';
+    Header('Location: ' . BASE_URL);
 }
 
 
