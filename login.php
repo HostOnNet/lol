@@ -4,12 +4,13 @@ include './include/config.php';
 
 if( isset($_SESSION["username"]))
 {
-     Header('Location: ' . BASE_URL);
+     echo 'You have logged in successfully.';
+     Header('Location: http://getboosted.bizhat.com/ ');
 }
 else
 {
-    echo 'You have logged in successfully.';
-    Header('Location: ' . BASE_URL);
+    
+    Header('Location: http://getboosted.bizhat.com/ ');
 }
 
 

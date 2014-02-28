@@ -48,7 +48,10 @@ document.getElementById("league2").value=league.options[league.selectedIndex].op
         });
     });
 </script>
+<link rel="stylesheet" href="css/reveal.css">
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
 
 
 
