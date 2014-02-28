@@ -48,6 +48,6 @@ function print_secure_content()
 
 <?php
     if(isset($_SESSION['username'])){
-        $_POST['user_id'] = $regname;
+        $_POST['user_id'] = $_SESSION['username'];
     }
 ?>
