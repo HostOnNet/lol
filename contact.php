@@ -64,3 +64,9 @@ function print_secure_content()
     Comments <br><textarea name="comments" style="width:100%;height:120px;margin:0 0 10px;"></textarea>
     <input type="submit" value="Send">
 </form>
+
+<?php
+    if(isset($_SESSION['username'])){
+        $_POST['user_id'] = $regname;
+    }
+?>
