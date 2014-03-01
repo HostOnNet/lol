@@ -9,6 +9,7 @@ $password = isset($_POST["regpass1"]) ? $_POST["regpass1"] : '';
 	$skype =  isset($_POST["skype"]) ? $_POST["skype"] : '';
     $agreeterms =  isset($_POST["agreeterms"]) ? $_POST["agreeterms"] : '';
 require './include/config.php';
+$con=mysql_connect("localhost","root","flashwebhost","test");
 $check="SELECT * FROM users WHERE name = '$_POST[regname]'";
 $rs = mysql_query($con,$check);
 $data = mysql_fetch_array($rs, MYSQL_NUM);
