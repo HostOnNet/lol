@@ -9,10 +9,10 @@ $password = isset($_POST["regpass1"]) ? $_POST["regpass1"] : '';
 	$skype =  isset($_POST["skype"]) ? $_POST["skype"] : '';
     $agreeterms =  isset($_POST["agreeterms"]) ? $_POST["agreeterms"] : '';
 require './include/config.php';
-$con=mysqli_connect("localhost","root","","test");
+$con=mysql_connect("localhost","root","flashwebhost") or die('Unable to connect to database');
 $check="SELECT * FROM users WHERE name = '$_POST[regname]'";
-$rs = mysqli_query($con,$check);
-$data = mysqli_fetch_array($rs, MYSQLI_NUM);
+$rs = mysql_query($con,$check);
+$data = mysql_fetch_array($rs, MYSQL_NUM);
 if($data[0] > 1)
 {
     echo "<p style='color: black;'>User Already in Exists<br/></p>";
