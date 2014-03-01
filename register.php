@@ -1,4 +1,3 @@
-
 <?php
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -8,7 +7,7 @@ $password = isset($_POST["regpass1"]) ? $_POST["regpass1"] : '';
 	$regname =  isset($_POST["regname"]) ? $_POST["regname"] : '';
 	$regemail =  isset($_POST["regemail"]) ? $_POST["regemail"] : '';
 	$skype =  isset($_POST["skype"]) ? $_POST["skype"] : '';
-    $agreeterms =  isset($_POST["agree"]) ? $_POST["agreeterms"] : '';
+    $agreeterms =  isset($_POST["agreeterms"]) ? $_POST["agreeterms"] : '';
 require './include/config.php';
 $con=mysqli_connect("localhost","root","","test");
 $check="SELECT * FROM users WHERE name = '$_POST[regname]'";
