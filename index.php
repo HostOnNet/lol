@@ -1,4 +1,4 @@
-     <?php include 'header.php'; ?>
+     <?php require 'header.php'; ?>
             <div id="head">
                 <a href="index.php"><div id="logo"></div></a>
                 <div class="rightsidehead">
