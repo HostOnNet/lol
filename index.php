@@ -53,6 +53,9 @@ $('#myModal').hide();
 $('.big-link').click(function(){
 $('#myModal').show();
 });
+$('.big-link').mouseout(function(){
+$('#myModal').hide();
+});
 });
 </script>
 
