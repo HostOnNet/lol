@@ -50,7 +50,7 @@ document.getElementById("league2").value=league.options[league.selectedIndex].op
 <script> 
 $(document).ready(function(){ 
 $('#myModal').hide();
-$('#myModal').click(function(){
+$('.big-link').click(function(){
 $('#myModal').show();
 });
 });
