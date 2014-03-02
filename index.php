@@ -17,8 +17,8 @@
     <script type='text/javascript' >
 function leagues()
 {
-var league2=document.getElementById("league2");
-document.getElementById("league").value=league2.options[league2.selectedIndex].options;
+var league2=document.getElementById("league");
+document.getElementById("league2").value=league.options[league.selectedIndex + '2'].options;
 }
 </script>
 <script>
