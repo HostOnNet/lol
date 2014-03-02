@@ -53,7 +53,7 @@ $('#myModal').hide();
 $('.big-link').click(function(){
 $('#myModal').show();
 });
-$('.big-link').mouseout(function(){
+$('.close-reveal-modal').click(function(){
 $('#myModal').hide();
 });
 });
