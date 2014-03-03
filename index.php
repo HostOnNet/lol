@@ -18,7 +18,8 @@
 function leagues()
 {
 var league2=document.getElementById("league");
-document.getElementById("league2").value=league.options[league.selectedIndex].options;
+var number="2";
+document.getElementById("league2").value=league.options[league.selectedIndex + number].options;
 }
 </script>
 <script>
