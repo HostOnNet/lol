@@ -148,6 +148,19 @@ function get_price($league_1, $division_1, $league_2, $division_2)
         case 'bronze1-div2-silver2-div1two': // 2 -> 1silver
             $price = 110;
             break;
+        case 'bronze1-div1-silver2-div4two': // 2 -> 4silver
+            $price = 37;
+            break;
+        case 'bronze1-div1-silver2-div3two': // 2 -> 3silver
+            $price = 57;
+            break;
+        case 'bronze1-div1-silver2-div2two': // 2 -> 2silver
+            $price = 77;
+            break;
+        case 'bronze1-div1-silver2-div1two': // 2 -> 1silver
+            $price = 97;
+            break;
+            
         case 'bronze1-div5-gold2-div5two': // 5 -> 5gold
             $price = 179;
             break;
